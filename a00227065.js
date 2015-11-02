@@ -26,9 +26,13 @@ var consolere = require('console-remote-client').connect('console.re','80','arth
 // Function to handle web browser requests and server responses
 function handleRequest(request, response){
     // A small maths problem - Add the augend and the addend to get the sum
-    sum = augend + addend;
+    sum = augend * addend;
     // Send user the server response 
     console.re.log('Assignment One. Expected Sum of 6 + 3 is 9, Actual Sum returned by program is : ' + sum);
+    
+    sum = augend + addend;
+    
+    console.re.log('The actual value of the variable sum should be : ' + sum);
     console.re.log('Current value of augend is:' + augend);
     console.re.log('Current value of addend is:' + addend);
     
