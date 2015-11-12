@@ -52,6 +52,9 @@ var server = http.createServer(handleRequest);
 
 // Lets start our server
 server.listen(server_port, server_ip_address, function(){
+    console.re.log('Yes! It Works!! Path Hit: ' + server_ip_address + ":" + server_port + "/" + request.url);
+    console.re.log("My server port is: " + server_port);
+    console.re.log("My ip address is: " + server_ip_address);
     // This is the callback function which triggered when server is successfully listening (active).
      
     // ASSIGNMENT
